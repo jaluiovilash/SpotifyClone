@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Spotify - Web Music Player | Listen to the music | spotify.co.in</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="images/favicon.png" alt="">Spotify</div>
+            <div class="bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Latest</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Favorites</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+            <div class="profile">
+                <span class="songName">Profile</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="songlist">
+                <h1>Best Playlist - Ovilash's playlist </h1>
+                <div class="song-item-container">
+                    <div class="songItem">
+                        <img src="images/1.jpeg" alt="cover-page">
+                        <span class="songName">Ace of base - Happy Nation</span>
+                        <span class="songlistplay">
+                            <span class="timeStamp">03:31
+                                <i id="0" class="songItemPlay fa-regular fa-1x fa-circle-play"></i>
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="songItem">
+                        <img src="images/1.jpeg" alt="cover-page">
+                        <span class="songName">DJLuke Nasty - Might Be</span>
+                        <span class="songlistplay">
+                            <span class="timeStamp">04:02
+                                <i id="1" class="songItemPlay fa-regular fa-1x fa-circle-play"></i>
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="songItem">
+                        <img src="images/1.jpeg" alt="cover-page">
+                        <span class="songName">Isabel LaRose - Favorite</span>
+                        <span class="songlistplay">
+                            <span class="timeStamp">02:11
+                                <i id="2" class="songItemPlay fa-regular fa-1x fa-circle-play"></i>
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="songItem">
+                        <img src="images/1.jpeg" alt="cover-page">
+                        <span class="songName">Isabel LaRose - I'm Yours</span>
+                        <span class="songlistplay">
+                            <span class="timeStamp">02:35
+                                <i id="3" class="songItemPlay fa-regular fa-1x fa-circle-play"></i>
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="songItem">
+                        <img src="images/1.jpeg" alt="cover-page">
+                        <span class="songName">OneRepublic - I ain't worried</span>
+                        <span class="songlistplay">
+                            <span class="timeStamp">02:34
+                                <i id="4" class="songItemPlay fa-regular fa-1x fa-circle-play"></i>
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="songItem">
+                        <img src="images/1.jpeg" alt="cover-page">
+                        <span class="songName">ovg! Virginity Syndrome</span>
+                        <span class="songlistplay">
+                            <span class="timeStamp">02:24
+                                <i id="5" class="songItemPlay fa-regular fa-1x fa-circle-play"></i>
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="songItem">
+                        <img src="images/1.jpeg" alt="cover-page">
+                        <span class="songName">Prabh - 09:45am</span>
+                        <span class="songlistplay">
+                            <span class="timeStamp">02:02
+                                <i id="6" class="songItemPlay fa-regular fa-1x fa-circle-play"></i>
+                            </span>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="songBanner"></div>
+        </div>
+
+        <div class="bottom">
+            <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
+
+            <div class="icons">
+                <i class="fa-solid fa-2x fa-backward" id="previous"></i>
+                <i class="songItemPlay fa-regular fa-2x fa-circle-play" id="masterPlay"></i>
+                <i class="fa-solid fa-2x fa-forward" id="next"></i>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/5f63217762.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
