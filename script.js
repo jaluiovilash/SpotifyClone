@@ -10,13 +10,13 @@ let songItems = Array.from(document.getElementsByClassName("songItem"));
 
 
 let songs = [
-    { songName: "Ace of base - Happy Nation", filePath: "songs/Ace of base - Happy Nation.mp3", coverPath: "images/1.jpeg" },
-    { songName: "DJLuke Nasty - Might Be", filePath: "songs/DJLuke Nasty - Might Be.mp3", coverPath: "images/1.jpeg" },
-    { songName: "Isabel LaRose - Favorite", filePath: "songs/Isabel LaRose - Favorite.mp3", coverPath: "images/1.jpeg" },
-    { songName: "Isabel LaRose - I'm Yours", filePath: "songs/Isabel LaRose - I'm Yours.mp3", coverPath: "images/1.jpeg" },
-    { songName: "OneRepublic - I ain't worried", filePath: "songs/OneRepublic - I ain't worried.mp3", coverPath: "images/1.jpeg" },
-    { songName: "ovg! Virginity Syndrome", filePath: "songs/ovg! Virginity Syndrome.mp3", coverPath: "images/1.jpeg" },
-    { songName: "Prabh - 09:45am", filePath: "songs/Prabh - 09:45am.mp3", coverPath: "images/1.jpeg" },
+    { songName: "Ace of base - Happy Nation", filePath: "songs/1.mp3", coverPath: "images/1.jpeg" },
+    { songName: "DJLuke Nasty - Might Be", filePath: "songs/2.mp3", coverPath: "images/1.jpeg" },
+    { songName: "Isabel LaRose - Favorite", filePath: "songs/3.mp3", coverPath: "images/1.jpeg" },
+    { songName: "Isabel LaRose - I'm Yours", filePath: "songs/4.mp3", coverPath: "images/1.jpeg" },
+    { songName: "OneRepublic - I ain't worried", filePath: "songs/5.mp3", coverPath: "images/1.jpeg" },
+    { songName: "ovg! Virginity Syndrome", filePath: "songs/6.mp3", coverPath: "images/1.jpeg" },
+    { songName: "Prabh - 09:45am", filePath: "songs/7.mp3", coverPath: "images/1.jpeg" },
 ]
 
 songItems.forEach((element, i) => {
@@ -51,6 +51,8 @@ myProgressBar.addEventListener('change', () => {
     audioElement.currentTime = (myProgressBar.value * audioElement.duration) / 100;
 })
 
+// songs lists
+
 const makeAllPlays = () => {
     Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) => {
         element.classList.remove('fa-circle-pause');
@@ -69,13 +71,12 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) =>
         masterSongName.innerText = songs[songIndex].songName;
         audioElement.currentTime = 0;
         audioElement.play();
-        masterPlay.classList.remove('fa-circle-play');
-        masterPlay.classList.add('fa-circle-pause');
+        masterPlay.classList.add('fa-circle-play');
+        masterPlay.classList.remove('fa-circle-pause');
     })
 })
 
 // backward forward song play
-
 document.getElementById("previous").addEventListener('click', () => {
     if (songIndex <= 0) {
         songIndex = 0;
