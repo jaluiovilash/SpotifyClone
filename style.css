@@ -97,20 +97,10 @@ nav {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
 .bottom {
     position: sticky;
     bottom: 0;
-    height: 12vh;
+    height: 15vh;
     width: 100%;
     background-color: black;
     color: white;
@@ -120,8 +110,9 @@ nav {
     flex-direction: column;
 }
 
+
 .icons {
-    margin-top: 14px;
+    margin-top: 10px;
 }
 
 .icons i {
@@ -129,6 +120,8 @@ nav {
 }
 
 #myProgressBar {
+    margin: 5px;
     width: 85vw;
     cursor: pointer;
+    accent-color: white;
 }
