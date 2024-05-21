@@ -1,10 +1,10 @@
-console.log("Welcome to Spotify")
+console.log("Welcome to Spotify");
 
 // intialize the variables
 let songIndex = 0;
-let audioElement = new Audio('songs/Ace of base - Happy Nation.mp3')
-let masterPlay = document.getElementById('masterPlay')
-let myProgressBar = document.getElementById('myProgressBar')
+let audioElement = new Audio('songs/Ace of base - Happy Nation.mp3');
+let masterPlay = document.getElementById('masterPlay');
+let myProgressBar = document.getElementById('myProgressBar');
 let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName("songItem"));
 
@@ -17,7 +17,7 @@ let songs = [
     { songName: "OneRepublic - I ain't worried", filePath: "songs/5.mp3", coverPath: "images/1.jpeg" },
     { songName: "ovg! Virginity Syndrome", filePath: "songs/6.mp3", coverPath: "images/1.jpeg" },
     { songName: "Prabh - 09:45am", filePath: "songs/7.mp3", coverPath: "images/1.jpeg" },
-]
+];
 
 songItems.forEach((element, i) => {
     // console.log(element, i);
@@ -45,11 +45,11 @@ audioElement.addEventListener('timeupdate', () => {
     // update seekbar
     progress = parseInt((audioElement.currentTime / audioElement.duration) * 100);
     myProgressBar.value = progress;
-})
+});
 
 myProgressBar.addEventListener('change', () => {
     audioElement.currentTime = (myProgressBar.value * audioElement.duration) / 100;
-})
+});
 
 // songs lists
 
@@ -57,8 +57,8 @@ const makeAllPlays = () => {
     Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) => {
         element.classList.remove('fa-circle-pause');
         element.classList.add('fa-circle-play');
-    })
-}
+    });
+};
 
 Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) => {
     element.addEventListener('click', (e) => {
@@ -73,8 +73,8 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) =>
         audioElement.play();
         masterPlay.classList.add('fa-circle-play');
         masterPlay.classList.remove('fa-circle-pause');
-    })
-})
+    });
+});
 
 // backward forward song play
 document.getElementById("previous").addEventListener('click', () => {
@@ -90,7 +90,7 @@ document.getElementById("previous").addEventListener('click', () => {
     audioElement.play();
     masterPlay.classList.remove('fa-circle-play');
     masterPlay.classList.add('fa-circle-pause');
-})
+});
 
 
 document.getElementById("next").addEventListener('click', () => {
@@ -106,4 +106,4 @@ document.getElementById("next").addEventListener('click', () => {
     audioElement.play();
     masterPlay.classList.remove('fa-circle-play');
     masterPlay.classList.add('fa-circle-pause');
-})
+});

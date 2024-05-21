@@ -69,7 +69,7 @@ nav {
     border-radius: 12px;
 }
 
-.song-item-container{
+.song-item-container {
     margin-top: 65px;
 }
 
@@ -94,7 +94,7 @@ nav {
     margin: 0 23px;
 }
 
-.timeStamp i{
+.timeStamp i {
     cursor: pointer;
 }
 
@@ -110,7 +110,7 @@ nav {
     flex-direction: column;
 }
 
-.songInfo{
+.songInfo {
     margin: 5px;
     font-size: 1.2rem;
 }

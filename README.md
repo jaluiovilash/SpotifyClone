@@ -1,7 +1,3 @@
-Of course! Here's the revised README file without the table of contents:
-
----
-
 # Spotify Clone Project
 
 Welcome to my Spotify Clone project! This project is my first attempt at using HTML, CSS, and JavaScript to create a basic music streaming platform similar to Spotify. Below, you'll find information on how to navigate the project, its features, and how to contribute.
